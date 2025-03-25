@@ -1,0 +1,59 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="#FFFFFF"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/imgPaymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_yape"
+                android:contentDescription="Icono de método de pago" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txtPaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yape"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:gravity="center"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtPaymentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/ 50.00"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/green_700"
+            android:gravity="center"
+            android:paddingTop="4dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

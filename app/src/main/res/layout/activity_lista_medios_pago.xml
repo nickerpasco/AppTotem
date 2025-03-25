@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/clCoordinator"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#f3f4f6"
+android:orientation="vertical"
+    tools:context=".ListaMediosPagoActivity">
+
+
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="match_parent"
+    android:layout_height="323dp"
+    android:layout_marginTop="-35dp"
+
+    android:scaleType="centerCrop"
+
+    app:srcCompat="@drawable/fondo_register_v2" />
+
+<ImageView
+    android:id="@+id/BtnRegresar"
+    android:layout_width="50dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="56dp"
+    android:layout_alignParentLeft="true"
+    android:padding="8dp"
+    android:src="@drawable/ic_menu"
+    app:tint="@color/white" />
+
+
+<TextView
+    android:layout_width="225dp"
+    android:layout_height="55dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:fontFamily="@font/poppins_default_bold"
+    android:scaleType="centerCrop"
+    android:text="     App Pago Fácil"
+    android:textColor="@color/white"
+    android:textSize="23dp" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:padding="8dp"
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+
+
+        <ImageView
+
+            android:layout_width="77dp"
+            android:layout_height="74dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_perfil" />
+
+
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_default_bold"
+            android:scaleType="centerCrop"
+            android:text="  Keyla Pasco"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_default_bold"
+            android:scaleType="centerCrop"
+            android:text="24/12/2024"
+            android:textColor="#CFBCEC"
+            android:textSize="15dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="210dp"
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:fontFamily="@font/poppins_default_bold"
+        android:scaleType="centerCrop"
+        android:text="Medios de Pago"
+        android:textColor="#351c56"
+        android:textSize="23dp" />
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="0dp" >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerPedidos"
+            android:background="@drawable/rect_recycler"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8.299988dip"
+            android:layout_marginTop="13.299988dip"
+            android:layout_marginRight="8.899994dip"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            android:scrollbars="vertical"
+            android:divider="@drawable/listview_divider"
+            tools:listitem="@layout/ordenesPago"
+            android:dividerHeight="1dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>

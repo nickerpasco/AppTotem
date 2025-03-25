@@ -30,7 +30,7 @@ android:orientation="vertical"
     android:layout_alignParentLeft="true"
     android:padding="8dp"
     android:src="@drawable/ic_menu"
-    android:tint="@color/white" />
+    app:tint="@color/white" />
 
     <ImageView
         android:id="@+id/BtnMasItems"

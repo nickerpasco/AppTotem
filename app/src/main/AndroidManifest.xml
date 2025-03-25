@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppPagos">
-        <activity android:name=".CitaspagoActivity"></activity>
+        <activity android:name=".ListaMediosPagoActivity"></activity>
+        <activity android:name=".CitaspagoActivity" />
         <activity android:name=".OrdenesPagoActivity" />
         <activity android:name=".IngresoDocumentosActivity" />
         <activity
