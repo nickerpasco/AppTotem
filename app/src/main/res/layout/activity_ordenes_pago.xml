@@ -1,0 +1,186 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f4f6"
+    android:orientation="vertical"
+    tools:context=".OrdenesPagoActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_marginTop="-35dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fondo_register_v2" />
+
+    <ImageView
+        android:id="@+id/BtnRegresar"
+        android:layout_width="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_menu"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_default_bold"
+        android:scaleType="centerCrop"
+        android:text="     App Pago Fácil"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="77dp"
+                android:layout_height="74dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ic_perfil" />
+
+            <TextView
+                android:layout_width="195dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_default_bold"
+                android:scaleType="centerCrop"
+                android:text="  Keyla Pasco"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+            <TextView
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_default_bold"
+                android:scaleType="centerCrop"
+                android:text="24/12/2024"
+                android:textColor="#CFBCEC"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_default_bold"
+            android:scaleType="centerCrop"
+            android:text="Listado de Pagos"
+            android:textColor="#351c56"
+            android:textSize="23dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerPedidos"
+                android:background="@drawable/rect_recycler"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="8.299988dip"
+                android:layout_marginTop="13.299988dip"
+                android:layout_marginRight="8.899994dip"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:divider="@drawable/listview_divider"
+                tools:listitem="@layout/item_deudas"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Contenedor flotante para mostrar el monto total y el botón de pago -->
+    <LinearLayout
+        android:id="@+id/contenedorPago"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:background="@drawable/bg_total_pago"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Monto Total"
+                android:fontFamily="@font/proxima_nova_bold"
+
+                android:textColor="#60f9f9f9"
+                android:textSize="14.0sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txtMontoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/ 50.00"
+                android:textColor="#ffffffff"
+                android:fontFamily="@font/proxima_nova_bold"
+                />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pagar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginLeft="21.0dip"
+            android:layout_marginRight="21.0dip"
+
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/confirm_shopping_cart_button"
+            android:enabled="true"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:paddingRight="10.0dip"
+            android:text="CONTINUAR"
+            android:textAllCaps="false"
+            android:textColor="@drawable/confirm_shopping_cart_button_text_color"
+            android:textSize="12.0sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
