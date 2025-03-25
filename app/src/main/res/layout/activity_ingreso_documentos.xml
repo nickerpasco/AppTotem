@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/clCoordinator"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#f3f4f6"
+android:orientation="vertical"
+    tools:context=".IngresoDocumentosActivity">
+
+
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="match_parent"
+    android:layout_height="323dp"
+    android:layout_marginTop="-35dp"
+
+    android:scaleType="centerCrop"
+
+    app:srcCompat="@drawable/fondo_register_v2" />
+
+<ImageView
+    android:id="@+id/BtnRegresar"
+    android:layout_width="50dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="56dp"
+    android:layout_alignParentLeft="true"
+    android:padding="8dp"
+    android:src="@drawable/ic_menu"
+    android:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/BtnMasItems"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_perfil" />
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_default_bold"
+        android:scaleType="centerCrop"
+        android:text="     App Pago Fácil"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:padding="8dp"
+
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="DNI"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="@android:color/transparent"
+            android:paddingHorizontal="20dp"
+            app:cornerRadius="50dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_default_bold"
+            android:textAllCaps="false"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="RUC"
+            android:textColor="#562583"
+            android:backgroundTint="#FFD700"
+            android:layout_marginLeft="10dp"
+            app:cornerRadius="50dp"
+            android:fontFamily="@font/poppins_default_bold"
+            android:textAllCaps="false"
+            android:paddingHorizontal="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="C.D.E"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            android:layout_marginLeft="10dp"
+            app:backgroundTint="@android:color/transparent"
+            android:paddingHorizontal="20dp"
+            app:cornerRadius="50dp"
+            android:fontFamily="@font/poppins_default_bold"
+            android:textAllCaps="false"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:fontFamily="@font/poppins_default_bold"
+            android:scaleType="centerCrop"
+            android:text="Ingrese Documento"
+            android:textColor="#351c56"
+            android:textSize="23dp" />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="-60dp"
+           >
+
+            <!-- Campo de entrada -->
+            <EditText
+                android:id="@+id/edtPin"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_rounded_white"
+                android:inputType="none"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Teclado numérico con GridLayout -->
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="4"
+                android:gap="10dp">
+
+                <!-- Botones numéricos -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/KeypadButton"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="2"
+                    style="@style/KeypadButton"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="3"
+                    style="@style/KeypadButton"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="4"
+                    style="@style/KeypadButton"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="5"
+                    style="@style/KeypadButton"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="6"
+                    style="@style/KeypadButton"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="7"
+                    style="@style/KeypadButton"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="8"
+                    style="@style/KeypadButton"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="9"
+                    style="@style/KeypadButton"/>
+
+                <!-- Botón vacío (espaciado) -->
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+
+                <!-- Botón 0 -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:text="0"
+                    style="@style/KeypadButton"/>
+
+                <!-- Botón de borrar -->
+                <ImageButton
+                    android:src="@drawable/ic_equisde"
+                    android:background="@drawable/bg_rounded_white"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="60dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerInside"/>
+            </GridLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="58dp"
+
+                android:layout_marginTop="40dp"
+
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/poppins_default_bold"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Continuar"
+
+                android:textColor="#351c56"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

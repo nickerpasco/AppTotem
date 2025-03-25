@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:background="@color/white"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Código de Orden -->
+        <TextView
+            android:id="@+id/tv_codigo_orden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orden #123456"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/poppins_default_bold" />
+
+        <!-- Tipo de Producto -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/iv_tipo_producto"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_baseline_attachment_24"
+                android:tint="@color/blue"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_tipo_producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Producto - Medicamento"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/default_font_bold" />
+        </LinearLayout>
+
+        <!-- Línea Divisoria -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Descripción del Producto -->
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paracetamol 500mg - Caja 20 tabletas"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/default_font_bold" />
+
+        <!-- Precio y Botón de Pago -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tv_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/ 35.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:fontFamily="@font/poppins_default_bold"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_pagar"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:textColor="@color/blue"
+                android:backgroundTint="@color/botonamarillo"
+                android:fontFamily="@font/poppins_default_bold"
+                style="@style/ButtonPrimary"
+                android:text="Añadir Pago"
+                android:textAllCaps="false"
+                android:paddingHorizontal="16dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
