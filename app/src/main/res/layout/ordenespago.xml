@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_yape"
+                android:src="@drawable/ic_visa"
                 android:contentDescription="Icono de método de pago" />
         </androidx.cardview.widget.CardView>
 
@@ -37,7 +37,7 @@
             android:id="@+id/txtPaymentMethod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yape"
+            android:text="Tarjeta de Crédito o Debito"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="#333"

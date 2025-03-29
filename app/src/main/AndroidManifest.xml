@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppPagos">
-        <activity android:name=".ListaMediosPagoActivity"></activity>
+        <activity android:name=".TransaccionNoExitosaMainActivity"></activity>
+        <activity android:name=".TransaccionExitosaActivity" />
+        <activity android:name=".ConfirmarPagoterminalActivity" />
+        <activity android:name=".PagarMontoActivity" />
+        <activity android:name=".ListaMediosPagoActivity" />
         <activity android:name=".CitaspagoActivity" />
         <activity android:name=".OrdenesPagoActivity" />
         <activity android:name=".IngresoDocumentosActivity" />
